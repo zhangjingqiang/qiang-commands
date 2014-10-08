@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if latest_command_list %}
+	<div class="row">
+	    {% for command in latest_command_list %}
+	    <div class="span12">
+	      <div class="alert alert-info">
+	        <h4>{{ command.title }}</h4>
+	        <hr>
+	        <pre>{{ command.command }}</pre>
+	      </div>
+	    </div>
+	    {% endfor %}
+	</div>
+{% else %}
+    <p>No commands are available.</p>
+{% endif %}
+
+{% endblock %}
