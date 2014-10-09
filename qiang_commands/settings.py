@@ -28,9 +28,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'd^kk=#8925gy)pv)__r38@gghs=l01bt*914b%2kaj-=r+d7i#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-TEMPLATE_DEBUG = False
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', ''))
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['localhost', 'qiang-commands.herokuapp.com']
 
