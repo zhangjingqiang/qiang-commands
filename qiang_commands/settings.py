@@ -31,7 +31,7 @@ SECRET_KEY = 'd^kk=#8925gy)pv)__r38@gghs=l01bt*914b%2kaj-=r+d7i#'
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', ''))
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['localhost', 'qiang-commands.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'gold-lightning-95-172831.apne1.nitrousbox.com', 'qiang-commands.herokuapp.com']
 
 
 # Application definition
