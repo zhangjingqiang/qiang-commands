@@ -2,11 +2,11 @@
 
 ## Introduction
 
-I will use the application to write some useful commands.
+I will use this app to write some useful commands.
 
 ## Installation
 
-```python
+```
 $ mkvirtualenv qiang-commands
 $ pip install -r requirements.txt
 $ python manage.py sqlmigrate qiang 0001
